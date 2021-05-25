@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:orientation="vertical"
+android:gravity="center"
+tools:context=".Ui.LoginFragment">
+<EditText
+    android:id="@+id/email"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="EMALL ADDRESS"
+    />
+<com.google.android.material.textfield.TextInputLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    app:passwordToggleEnabled="true">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:id="@+id/password"
+        android:hint="PASSWORD"
+        android:inputType="textPassword"/>
+</com.google.android.material.textfield.TextInputLayout>
+<TextView
+    android:id="@+id/forget_password"
+    android:layout_width="150dp"
+    android:layout_height="wrap_content"
+    android:hint="Forget your password?"/>
+<CheckBox
+    android:layout_width="150dp"
+    android:id="@+id/remember_me"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:padding="5dp"
+    android:theme="@style/colored_checkBox"
+    android:button="@drawable/image_checkbox"
+    android:hint="Remember me"/>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/login"
+    android:text="LOGIN"/>
+</LinearLayout>

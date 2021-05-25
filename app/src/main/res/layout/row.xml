@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3dp"
+    app:cardElevation="3dp"
+    app:cardUseCompatPadding="true"
+    tools:ignore="InvalidId"
+    android:id="@+id/product_item">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/Image"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:id="@+id/imageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/Image"
+            android:layout_toEndOf="@id/Image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:text="Jacket"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="10$"
+            android:id="@+id/price"
+            android:textSize="18sp"
+            android:textColor="#a9a9a9"
+            android:layout_toRightOf="@id/Image"
+            android:layout_toEndOf="@id/Image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@id/imageTitle"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
